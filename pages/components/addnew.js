@@ -47,7 +47,7 @@ const addnew = () => {
 						<div className="col-lg-12">
 							<div className="card">
 								<div className="card-header">
-									<h4 className="card-title">Add User * </h4>
+									<h4 className="card-title">Add User ** </h4>
 								</div>
 								<div className="card-body">
 									<form onSubmit={HandleSubmit}>
@@ -76,7 +76,7 @@ const addnew = () => {
 												<input type="text" className="form-control" onChange={e => setEmail(e.target.value)}/>
 											</div>
 										</div>
-										
+
 										{/* <div className="form-group row">
 											<label className="col-form-label col-md-2">Password</label>
 											<div className="col-md-10">
