@@ -13,7 +13,7 @@ const addnew = () => {
         e.preventDefault()
 		//console.log(123);
 
-                   await fetch('https://ffapps.itvip.live/api/auth/register', {
+                   await fetch('http://ffapps.itvip.live/api/auth/register', {
                         method: 'POST',
                         headers: {'Content-Type':'application/json'},
                         body: JSON.stringify({
@@ -43,12 +43,11 @@ const addnew = () => {
 						</div>
 					</div>
 					
-					
 					<div className="row">
 						<div className="col-lg-12">
 							<div className="card">
 								<div className="card-header">
-									<h4 className="card-title">Add User </h4>
+									<h4 className="card-title">Add User * </h4>
 								</div>
 								<div className="card-body">
 									<form onSubmit={HandleSubmit}>
