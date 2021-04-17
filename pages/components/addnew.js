@@ -76,6 +76,7 @@ const addnew = () => {
 												<input type="text" className="form-control" onChange={e => setEmail(e.target.value)}/>
 											</div>
 										</div>
+										
 										{/* <div className="form-group row">
 											<label className="col-form-label col-md-2">Password</label>
 											<div className="col-md-10">
