@@ -5,7 +5,7 @@ const addnew = () => {
     const [firstname,setFirstname] = useState('')
     const [lastname,setLastname] = useState('')
     const [email,setEmail] = useState('')
-    const [password,setPassword] = useState('')
+  //  const [password,setPassword] = useState('')
     const [notification,setNotification] = useState('')
     const [role,setRole] = useState('')
     const router = useRouter()
@@ -17,7 +17,7 @@ const addnew = () => {
                         method: 'POST',
                         headers: {'Content-Type':'application/json'},
                         body: JSON.stringify({
-                            username,firstname,lastname,email,password,notification,role
+                            username,firstname,lastname,email,notification,role
                         })
                     })
 
@@ -76,12 +76,12 @@ const addnew = () => {
 												<input type="text" className="form-control" onChange={e => setEmail(e.target.value)}/>
 											</div>
 										</div>
-										<div className="form-group row">
+										{/* <div className="form-group row">
 											<label className="col-form-label col-md-2">Password</label>
 											<div className="col-md-10">
 												<input type="password" className="form-control" onChange={e => setPassword(e.target.value)}/>
 											</div>
-										</div>
+										</div> */}
 									
 										<div className="form-group row">
 											<label className="col-form-label col-md-2">Send User Notification</label>
