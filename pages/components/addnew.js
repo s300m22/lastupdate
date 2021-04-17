@@ -11,7 +11,7 @@ const addnew = () => {
     const router = useRouter()
      const HandleSubmit = async (e)=>{
         e.preventDefault()
-		console.log(123);
+		//console.log(123);
 
                    await fetch('https://ffapps.itvip.live/api/auth/register', {
                         method: 'POST',
@@ -21,7 +21,7 @@ const addnew = () => {
                         })
                     })
 
-                    //await  router.push('/')
+                    await  router.push('/component/alluser')
 
     }
     
@@ -48,7 +48,7 @@ const addnew = () => {
 						<div className="col-lg-12">
 							<div className="card">
 								<div className="card-header">
-									<h4 className="card-title">User</h4>
+									<h4 className="card-title">Add User</h4>
 								</div>
 								<div className="card-body">
 									<form onSubmit={HandleSubmit}>
