@@ -48,7 +48,7 @@ const addnew = () => {
 						<div className="col-lg-12">
 							<div className="card">
 								<div className="card-header">
-									<h4 className="card-title">Add User</h4>
+									<h4 className="card-title">Add User </h4>
 								</div>
 								<div className="card-body">
 									<form onSubmit={HandleSubmit}>
