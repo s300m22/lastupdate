@@ -12,16 +12,25 @@ const addnew = () => {
      const HandleSubmit = async (e)=>{
         e.preventDefault()
 		//console.log(123);
+		axios.post('http://ffapps.itvip.live/api/auth/register', {
+			username,firstname,lastname,email,notification,role
+		},{'Content-Type':'application/json'})
 
-                   await fetch('http://ffapps.itvip.live/api/auth/registe', {
-                        method: 'POST',
-                        headers: {'Content-Type':'application/json'},
-                        body: JSON.stringify({
-                            username,firstname,lastname,email,notification,role
-                        })
-                    }).catch((error) => {
-						console.error(error);
-					  });
+        .then(response => response.data)
+        .catch(error => {
+            // this.setState({ errorMessage: error.message });
+            console.error('There was an error!', error);
+        });
+
+                //    await fetch('http://ffapps.itvip.live/api/auth/registe', {
+                //         method: 'POST',
+                //         headers: {'Content-Type':'application/json'},
+                //         body: JSON.stringify({
+                //             username,firstname,lastname,email,notification,role
+                //         })
+                //     }).catch((error) => {
+				// 		console.error(error);
+				// 	  });
 
                     //await  router.push('/component/alluser')
 
