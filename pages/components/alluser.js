@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export const getStaticProps = async () => {
   const res = await fetch('https://ffapps.itvip.live/api/auth/me')
   const data = await res.json();
@@ -31,7 +32,7 @@ const result = posts.map(post => {
               <td>
                 
               <button type="button" class="btn btn-labeled btn-danger">
-                <span class="btn-label"><i class="la la-trash"></i></span>Trash</button>
+                <span class="btn-label"><FontAwesomeIcon icon={["fal", "coffee"]} /></span>Trash</button>
                   
               </td>
           </tr>

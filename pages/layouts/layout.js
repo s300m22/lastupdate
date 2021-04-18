@@ -10,7 +10,6 @@ const layout = ({children}) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
                 <title>Home</title>
                 <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png" />
-                <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
                 <link rel="stylesheet" href="/plugins/datatables/datatables.min.css"/>
                 
 
