@@ -17,7 +17,7 @@ const result = posts.map(post => {
           <tr key={post.id}>
 
              <td>{post.username}</td>
-             <td>{post.firstname + post.lastname}</td>
+             <td>{post.firstname +' '+ post.lastname}</td>
              <td>{post.email}</td>
              <td>{post.role}</td>
                                   
