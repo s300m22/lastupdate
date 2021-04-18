@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch('https://ffapps.itvip.live/api/auth/me')
   const data = await res.json();
   return {
