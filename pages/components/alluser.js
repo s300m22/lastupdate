@@ -27,7 +27,7 @@ const result = posts.map(post => {
   )
 })
   return (
-    <div className={styles.container}>
+    <div>
 
             
 <div className='row'>{result}</div>
