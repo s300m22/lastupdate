@@ -118,7 +118,7 @@ const addnew = () => {
 												<div className="input-group">
 													
 													<div className="input-group-append">
-														<button className="btn btn-primary" type="button">Add New User</button>
+														<button className="btn btn-primary" type="submit">Add New User</button>
 													</div>
 												</div>
 											</div>
