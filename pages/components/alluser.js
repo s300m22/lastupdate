@@ -19,7 +19,8 @@ const result = posts.map(post => {
              <td>{post.username}</td>
              <td>{post.firstname +' '+ post.lastname}</td>
              <td>{post.email}</td>
-             <td>{post.role == 0 ? 'Waiting approval' : 'No'}</td>
+             <td>{post.role}</td>
+             <td>{post.status == 0 ? 'Waiting approval' : 'No'}</td>
                                   
               <td>
                   <div class="status-toggle">
@@ -70,6 +71,7 @@ const result = posts.map(post => {
 													<th>Email</th>
 													<th>Role</th>
                           <th>Pending Approval</th>
+                          <th>Active</th>
                           <th>Action</th>
 												
 													
