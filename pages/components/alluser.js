@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import React from 'react'
 import Link from 'next/link';
 export const getStaticProps = async () => {
   const res = await fetch('http://ffapps.itvip.live/api/auth/me')
