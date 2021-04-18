@@ -31,7 +31,7 @@ const result = posts.map(post => {
               <td>
                 
               <button type="button" class="btn btn-labeled btn-danger">
-                <span class="btn-label"><i class="glyphicon glyphicon-trash"></i></span>Trash</button>
+                <span class="btn-label"><i class="la la-trash"></i></span>Trash</button>
                   
               </td>
           </tr>
