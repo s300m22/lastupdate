@@ -21,7 +21,7 @@ const addnew = () => {
                         })
                     }) 
 
-                    await  router.push('/alluser')
+                    await  router.push('/components/alluser')
 
     }
     
