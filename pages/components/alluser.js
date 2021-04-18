@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
 export const getStaticProps = async () => {
-  const res = await fetch('http://ffapps.itvip.live/api/auth/me')
+  const res = await fetch('https://ffapps.itvip.live/api/auth/me')
   const data = await res.json();
   return {
     // props:{data}
