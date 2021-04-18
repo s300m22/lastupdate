@@ -14,13 +14,12 @@ export const getStaticProps = async () => {
 export default function alluser({posts}) {
 const result = posts.map(post => {
   return(
-
           <tr key={post.id}>
 
              <td>{post.username}</td>
              <td>{post.firstname +' '+ post.lastname}</td>
              <td>{post.email}</td>
-             <td>{post.role}</td>
+             <td>{post.role == 0 ? 'Waiting approval' : 'No'}</td>
                                   
               <td>
                   <div class="status-toggle">
@@ -70,7 +69,7 @@ const result = posts.map(post => {
 													<th>Full Name</th>
 													<th>Email</th>
 													<th>Role</th>
-                          <th>Status</th>
+                          <th>Pending Approval</th>
                           <th>Action</th>
 												
 													
