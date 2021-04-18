@@ -24,13 +24,14 @@ const result = posts.map(post => {
               <td>
                   <div class="status-toggle">
                     <input type="checkbox" id={"status_" +`${post.id}`} class="check" />
-                    <label for="status_1" class="checktoggle">checkbox</label>
+                    <label for={"status_" +`${post.id}`} class="checktoggle">checkbox</label>
                   </div>
               </td>
                                    
               <td>
                 
-              <i class="bi bi-trash"></i>
+              <button type="button" class="btn btn-labeled btn-danger">
+                <span class="btn-label"><i class="glyphicon glyphicon-trash"></i></span>Trash</button>
                   
               </td>
           </tr>
