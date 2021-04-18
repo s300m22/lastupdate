@@ -19,7 +19,9 @@ const addnew = () => {
                         body: JSON.stringify({
                             username,firstname,lastname,email,notification,role
                         })
-                    })
+                    }).catch((error) => {
+						console.error(error);
+					  });
 
                     //await  router.push('/component/alluser')
 
