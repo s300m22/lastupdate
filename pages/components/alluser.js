@@ -1,5 +1,4 @@
 import styles from '../styles/Home.module.css'
-import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 export const getStaticProps = async () => {
   const res = await fetch('http://ffapps.itvip.live/api/auth/me')
@@ -30,10 +29,7 @@ const result = posts.map(post => {
   return (
     <div className={styles.container}>
 
-                <NextSeo
-                title="FFP"
-                description="FFP Description"
-                />
+            
 <div className='row'>{result}</div>
                 
       Home 
