@@ -37,7 +37,7 @@ const addnew = () => {
 								<h3 className="page-title">User</h3>
 								<ul className="breadcrumb">
 									<li className="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-									<li className="breadcrumb-item active">User</li>
+									<li className="breadcrumb-item active">User *</li>
 								</ul>
 							</div>
 						</div>
@@ -47,7 +47,7 @@ const addnew = () => {
 						<div className="col-lg-12">
 							<div className="card">
 								<div className="card-header">
-									<h4 className="card-title">Add User ***** </h4>
+									<h4 className="card-title">Add User  </h4>
 								</div>
 								<div className="card-body">
 									<form onSubmit={HandleSubmit}>
