@@ -27,6 +27,14 @@ const result = posts.map(post => {
                     <label for="status_1" class="checktoggle">checkbox</label>
                   </div>
               </td>
+                                   
+              <td>
+                
+                  <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  
+              </td>
           </tr>
   )
 })
@@ -59,11 +67,12 @@ const result = posts.map(post => {
 											<thead>
 												<tr>
 													<th>Username</th>
-													<th>Name</th>
-													<th>Patient Name</th>
+													<th>Full Name</th>
 													<th>Email</th>
-                                                    <th>Role</th>
-													<th>Status</th>
+													<th>Role</th>
+                          <th>Status</th>
+                          <th>Action</th>
+												
 													
 												</tr>
 											</thead>
