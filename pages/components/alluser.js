@@ -23,7 +23,7 @@ const result = posts.map(post => {
                                   
               <td>
                   <div class="status-toggle">
-                    <input type="checkbox" id="status_1" class="check" />
+                    <input type="checkbox" id={"status_" +`${post.id}`} class="check" />
                     <label for="status_1" class="checktoggle">checkbox</label>
                   </div>
               </td>
