@@ -13,7 +13,7 @@ const addnew = () => {
         e.preventDefault()
 		//console.log(123);
 
-                   await fetch('http://ffapps.itvip.live/api/auth/register', {
+                   await fetch('https://ffapps.itvip.live/api/auth/register', {
                         method: 'POST',
                         headers: {'Content-Type':'application/json'},
                         body: JSON.stringify({
