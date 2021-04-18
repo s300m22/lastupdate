@@ -30,9 +30,7 @@ const result = posts.map(post => {
                                    
               <td>
                 
-                  <button type="button" class="close" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+              <i class="bi bi-trash"></i>
                   
               </td>
           </tr>
