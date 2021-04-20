@@ -4,7 +4,7 @@ import Modal from 'react-modal'
 import {useRouter} from 'next/router'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const res = await fetch('https://ffapps.itvip.live/api/auth/me')
   const data = await res.json();
   return {
