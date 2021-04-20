@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 import Link from 'next/link';
+import Modal from 'react-modal'
+import {useRouter} from 'next/router'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export const getStaticProps = async () => {
   const res = await fetch('https://ffapps.itvip.live/api/auth/me')
   const data = await res.json();
@@ -10,8 +13,50 @@ export const getStaticProps = async () => {
     
   }
 }
+
+
+
+
+// useEffect(() => {
+//   // DELETE request using fetch with async/await
+//   async function deletePost() {
+//       await fetch('https://ffapps.itvip.live/api/auth/delete/5', { method: 'DELETE' });
+//       setStatus('Delete successful');
+//   }
+
+//   deletePost();
+// }, []);
+
+
 //getServerSideProps
 export default function alluser({posts}) {
+  const router = useRouter()
+
+
+ //useEffect(()=>{
+  async function Delete(id){
+  if(window.confirm('are you sure ?')){
+    await fetch('https://ffapps.itvip.live/api/auth/delete/'+ id);
+ 
+   }
+  await router.push('/components/alluser')
+  }
+
+   function Edit(id){
+   console.log(id);
+   <Modal isOpen={true}>
+     <div>
+       hi
+     </div>
+   </Modal>
+    
+    }
+ // forceUpdate(id)
+ //},[])
+ 
+  //console.log('https://ffapps.itvip.live/api/auth/delete/'+id);
+
+  //const handleRemove = useForceUpdate();
 const result = posts.map(post => {
   return(
           <tr key={post.id}>
@@ -31,8 +76,16 @@ const result = posts.map(post => {
                                    
               <td>
                 
-              <button type="button" class="btn btn-labeled btn-danger">
-                <span class="btn-label"><FontAwesomeIcon icon={["fal", "coffee"]} /></span>Trash</button>
+              <button type="button" class="btn btn-labeled btn-danger" onClick={() => Delete(post.id)}>
+                <span class="btn-label"></span>Trash</button>
+                <span style={{marginRight:'5px'}}></span>
+
+                <Link href={"/components/"+`${post.id}`}>
+                  <a class="btn btn-labeled btn-success"> <span class="btn-label"></span>Edit</a>
+               
+                </Link>
+               
+               
                   
               </td>
           </tr>
