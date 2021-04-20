@@ -68,20 +68,20 @@ const result = posts.map(post => {
              <td>{post.status == 0 ? 'Waiting approval' : 'No'}</td>
                                   
               <td>
-                  <div class="status-toggle">
-                    <input type="checkbox" id={"status_" +`${post.id}`} class="check" />
-                    <label for={"status_" +`${post.id}`} class="checktoggle">checkbox</label>
+                  <div className="status-toggle">
+                    <input type="checkbox" id={"status_" +`${post.id}`} className="check" />
+                    <label for={"status_" +`${post.id}`} className="checktoggle">checkbox</label>
                   </div>
               </td>
                                    
               <td>
                 
-              <button type="button" class="btn btn-labeled btn-danger" onClick={() => Delete(post.id)}>
-                <span class="btn-label"></span>Trash</button>
+              <button type="button" className="btn btn-labeled btn-danger" onClick={() => Delete(post.id)}>
+                <span className="btn-label"></span>Trash</button>
                 <span style={{marginRight:'5px'}}></span>
 
                 <Link href={"/components/"+`${post.id}`}>
-                  <a class="btn btn-labeled btn-success"> <span class="btn-label"></span>Edit</a>
+                  <a className="btn btn-labeled btn-success"> <span className="btn-label"></span>Edit</a>
                
                 </Link>
                
@@ -93,30 +93,30 @@ const result = posts.map(post => {
 })
   return (
           <div>
-              <div class="page-wrapper">
-                <div class="content container-fluid">
+              <div className="page-wrapper">
+                <div className="content container-fluid">
 				
 					
-                  <div class="page-header">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <h3 class="page-title">Users</h3>
-                        <ul class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                          <li class="breadcrumb-item active">Users</li>
+                  <div className="page-header">
+                    <div className="row">
+                      <div className="col-sm-12">
+                        <h3 className="page-title">Users</h3>
+                        <ul className="breadcrumb">
+                          <li className="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                          <li className="breadcrumb-item active">Users</li>
                         </ul>
                       </div>
                     </div>
                   </div>
 				
-					<div class="row">
-						<div class="col-md-12">
+					<div className="row">
+						<div className="col-md-12">
 						
 						
-							<div class="card">
-								<div class="card-body">
-									<div class="table-responsive">
-										<table class="datatable table table-hover table-center mb-0">
+							<div className="card">
+								<div className="card-body">
+									<div className="table-responsive">
+										<table className="datatable table table-hover table-center mb-0">
 											<thead>
 												<tr>
 													<th>Username</th>
